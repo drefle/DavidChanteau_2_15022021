@@ -1,3 +1,302 @@
-body{
-    color:red;
+*{
+    list-style: none;
+    text-decoration: none;
+    margin:0;
+    padding: 0;
+}
+
+@font-face{
+    font-family:'Raleway-Regular';
+    src:url('Raleway-Regular.ttf');
+}
+
+@font-face{
+    font-family:'Raleway-Thin';
+    src:url('Raleway-Thin.ttf');
+}
+
+@font-face{
+    font-family:'Raleway-Black';
+    src:url('Raleway-Black.ttf');
+}
+
+@font-face{
+    font-family:'Raleway-SemiBold';
+    src:url('Raleway-SemiBold.ttf');
+}
+
+@font-face{
+    font-family:'Raleway-Bold';
+    src:url('Raleway-Bold.ttf');
+}
+.page{
+    height: auto;
+    width: 92%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    position: relative;
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    grid-template-areas:"logo none navbar inscription";
+    width:100%;
+    height:auto;
+}
+
+.header img{
+    padding:5vh 0 5vh 0;
+    width: 93px;
+    height:43px
+}
+
+.header__liste{
+    font-family: Raleway-Thin;
+    font-size: 1rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    grid-row-start: 1;
+    grid-column-start: navbar;
+    color: black;
+}
+
+.header__liste li{
+    padding: 2rem;
+    color:black;
+}
+
+.header__liste li a{
+    color:inherit;
+    height: 100%;
+
+}
+
+
+.header__liste li:hover, .active{
+    border-top: 2px solid #0065FC;
+    color: #0065FC;
+}
+
+.header__inscription{
+    font-family: Raleway-Bold;
+    color: #0065FC;
+
+    padding: 2rem;
+    border-top: 2px solid transparent;
+    align-self: baseline;
+    grid-column-start: inscription;
+}
+
+.recherche{
+    display:flex;
+    flex-direction: column;
+}
+
+.recherche__catchline{
+    font-family: Raleway-Bold;
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+}
+
+.recherche__text{
+    font-family: Raleway-Regular;
+    font-size: 0.95rem;
+}
+
+.recherche__input{
+    display: grid;
+    grid-template-columns: 1fr 5fr 3fr;
+    grid-template-areas:"maps input button ";
+    height: 2.5rem;
+    margin-top: 1rem;
+    width: 350px;
+    border-radius: 13px;
+    overflow: hidden;
+}
+
+.maps{
+    grid-column-start: maps;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: #F2F2F2;
+}
+
+.maps img{
+    width:13px;
+}
+
+.input{
+    grid-column-start: input;
+    border: 1.5px  solid #F2F2F2 ;
+    font-family: Raleway-Bold;
+    font-size: 0.9rem;
+    color: black;
+    padding-left: 10px;
+}
+
+.btnsearch{
+    font-family: Raleway-Regular;
+    font-weight: 700;
+    letter-spacing: 1px;
+    grid-column-start: button;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: white;
+    background-color: #0065FC;
+    border: none;
+    outline: none;
+}
+
+.recherche__filtre{
+    margin-top: 2rem;
+    display:flex;
+    align-items: center;
+}
+
+.recherche__filtre h3{
+    font-family: Raleway-Bold;
+    font-size: 1rem;
+    color: black;
+}
+
+.filtres{
+    display:flex;
+    width: 100%;
+}
+
+.filtres li{
+    display: flex;
+    align-items: center;
+    margin-left: 2%;
+    height: 2.6rem;
+    width: auto;
+    border: 2px solid #F2F2F2;
+    border-radius: 26px;
+}
+.filtres li h3{
+    
+    padding: 15px;
+}
+
+.filtres__icon{
+    border-radius: 50%;
+    height: 2.6rem;
+    width: 2.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DEEBFF;
+    position: relative;
+    left:-2px;
+}
+
+.filtres__icon .fas{
+    color: #0065FC;
+}
+
+.recherche__info{
+    margin-top: 2rem;
+    height: 0.95rem;
+    display: flex;
+    align-items: center;
+}
+.info__icon{
+    border: 2px solid #F2F2F2;
+    border-radius: 50%;
+    height: 18px;
+    width:18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.info__icon .fas{
+    color: #0065FC;
+    font-size: 10px;
+}
+
+#hébergements{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: "hebergement populaire";
+    grid-column-gap: 20px;
+}
+
+.hebergement__liste{
+    background-color: #F2F2F2;
+    grid-column-start: hebergement;
+    border-radius: 20px;
+    
+}
+
+.hebergement__populaires{
+    background-color: #F2F2F2;
+    grid-column-start: populaire;
+    border-radius: 20px;
+
+}
+
+.liste__cards{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 20px;
+    margin:1rem 2rem;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    height: 13rem;
+    border-radius: 15px;
+    background-color: white;
+    padding:2%;
+    justify-content: space-between;
+}
+.card picture{
+    height:60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.card picture img{
+    width:100%;
+    border-radius: 15px 15px 0 0;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card__descriptif{
+    margin: 3%;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.descriptif__nom{
+    font-family: Raleway-Bold;
+    font-size: 1rem;
+}
+
+.descriptif__prix{
+    font-size: 0.8rem;
+    font-family: Raleway-Regular;
+}
+
+.descriptif__star .true{
+    color: #0065FC;
+}
+
+.descriptif__star .false{
+    color: #E1E1E1;
 }
