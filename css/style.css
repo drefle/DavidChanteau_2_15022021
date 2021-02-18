@@ -4,6 +4,9 @@
     margin:0;
     padding: 0;
 }
+a{
+    color: black;
+}
 
 
 @font-face{
@@ -32,7 +35,7 @@
 }
 .page{
     height: auto;
-    width: 92%;
+    padding:0 3rem;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -228,7 +231,7 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-areas: "hebergement populaire";
-    grid-column-gap: 2rem;
+    grid-column-gap: 3rem;
 }
 
 .card{
@@ -377,13 +380,13 @@
     display:grid;
     grid-template-columns:repeat(4,1fr);
     grid-template-rows: 48.5% 9.5% 9.5% 32.5%;
-    grid-gap: 3rem;
-    height: 27rem;
-    margin:2rem 0;
+    column-gap: 3rem;
+    height: 28rem;
+    margin:1.5rem 0;
 }
 
 #activites{
-    margin: 5rem 0;
+    margin: 4rem 0;
 }
 
 #activites .title{
@@ -426,6 +429,7 @@
     grid-column-start: 2;
     grid-row-start: 1;
     grid-row-end: span 2;
+    margin-bottom: 1.5rem;
 }
 .c{
     grid-column-start: 3;
@@ -435,14 +439,46 @@
 .d{
     grid-column-start: 4;
     grid-row-start: 1;
+    margin-bottom: 1.5rem;
 }
 .e{
     grid-column-start: 2;
     grid-row-start: 3;
-    grid-row-end:span 2
+    grid-row-end:span 2;
+    margin-top: 1.5rem;
 }
 .f{
     grid-column-start: 4;
     grid-row-start: 2;
     grid-row-end: span 3;
+    margin-top: 1.5rem;
+}
+
+.footer{
+    background-color: #F2F2F2;
+    padding: 3rem 28% 3rem 3rem;
+    height: 7rem;
+    display: flex;
+    justify-content: space-between;
+}
+.footer__liens{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.footer__liens h3{
+    font-family: Raleway-Bold;
+    margin-bottom: 5%;
+}
+
+.footer__liens ul{
+    display: flex;
+    flex-direction: column;
+    font-family: Raleway-Regular;
+}
+
+.footer__liens ul li{
+    margin: 0.25rem 0 0.25rem 0;
+    font-size: 0.9rem;
 }
