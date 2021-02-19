@@ -46,8 +46,7 @@ a{
     display: grid;
     grid-template-columns: auto 1fr auto auto;
     grid-template-areas:"logo none navbar inscription";
-    width:100%;
-    height:auto;
+    padding:0 3rem
 }
 
 .header img{
