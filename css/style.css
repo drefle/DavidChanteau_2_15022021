@@ -201,9 +201,31 @@ a{
     left:-2px;
 }
 
+.filtres li:hover > .filtres__icon{
+    background-color: #0065FC;
+    transition:  0.5s;
+}
+.filtres li:hover > .filtres__icon .fas{
+    transform: rotate(360deg);
+    color: #DEEBFF;
+    transition:  1.5s;
+}
+
+.filtres li:hover{
+    background-color: #DEEBFF;
+    transition: 0.5s;
+}
+
+.filtres li:hover > h3{
+
+    color: #0065FC;
+    transition: 0.5s;
+}
+
 .filtres__icon .fas{
     color: #0065FC;
 }
+
 
 .recherche__info{
     margin-top: 2rem;
@@ -416,7 +438,7 @@ a{
     height: 50px;
 }
 #activites .liste__cards .card h3{
-    margin:1rem 1.2rem;
+    margin:0.8rem 1rem;
     font-family: Raleway-Bold;
 }
 
@@ -477,9 +499,32 @@ a{
     display: flex;
     flex-direction: column;
     font-family: Raleway-Regular;
+    height: auto;
 }
 
 .footer__liens ul li{
     margin: 0.25rem 0 0.25rem 0;
     font-size: 0.9rem;
+    border-bottom: 1px solid transparent;
+    overflow: hidden;
+}
+
+.footer__liens ul li a{
+    position: relative;
+}
+
+.footer__liens ul li a::after{
+    content: "";
+    width: 100%;
+    left:-100%;
+    bottom: 0;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+}
+
+
+.footer__liens ul li:hover > a::after{
+    transform: translateX(100%);
+    transition: transform 0.8s ease-out;
 }
