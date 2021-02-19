@@ -7,17 +7,17 @@
     <script src="https://kit.fontawesome.com/1021098a8f.js" crossorigin="anonymous"></script>    <title>Réservia</title>
     </head>
     <body>
-
+        <header class="header">
+            <img src="images/logo/Reservia.svg" alt="Réservia">
+            <p class="header__inscription">S'inscrire</p>
+            <ul class="header__liste">
+                <li class="active"><a href="#hebergements">Hébergements</a></li>
+                <li><a href="#activites">Activités</a></li>
+            </ul>
+        </header>
         <div class="page">
 
-            <header class="header">
-                <img src="images/logo/Reservia.svg" alt="Réservia">
-                <p class="header__inscription">S'inscrire</p>
-                <ul class="header__liste">
-                    <li class="active"><a href="#hebergements">Hébergements</a></li>
-                    <li><a href="#activites">Activités</a></li>
-                </ul>
-            </header>
+            
     
             <section class="recherche">
     
@@ -27,7 +27,7 @@
                 <div class="recherche__input">
                     <div class="maps"><img src="css/map-marker-alt-solid.svg" alt="maps"></div>
                     <input class="input" type="search">
-                    <button class="btnsearch">Rechercher</button>
+                    <button class="btnsearch"><i class="fas fa-search"></i></button>
                 </div>
 
                 <div class="recherche__filtre">
