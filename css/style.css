@@ -37,7 +37,7 @@ p{
     font-family:'Raleway-Bold';
     src:url('Raleway-Bold.ttf');
 }
-.page{
+main{
     padding:0 3rem;
 }
 
@@ -498,7 +498,7 @@ footer{
         color: #0065FC;
     }
     
-    .page{
+    main{
         padding:0;
     }
 
