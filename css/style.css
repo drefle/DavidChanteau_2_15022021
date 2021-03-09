@@ -80,12 +80,11 @@ nav ul li{
     border-top: 2px solid transparent;
 }
 
-nav ul li a{
-    color:inherit;
-}
-
 nav ul li:hover{
     border-top: 2px solid #0065FC;
+}
+
+nav ul li:hover > a{
     color: #0065FC;
 }
 
@@ -502,15 +501,10 @@ footer{
         display: flex;
         justify-content: center;
     }
-    
-    nav ul li a{
-        color:inherit;
-    }
-    
+
     nav ul li:hover{
         border-bottom: 2px solid #0065FC;
         border-top: none;
-        color: #0065FC;
     }
     
     main{
@@ -787,13 +781,8 @@ footer{
         justify-content: center;
     }
     
-    nav ul li a{
-        color:inherit;
-    }
-    
     nav ul li:hover{
         border-bottom: 2px solid #0065FC;
         border-top: none;
-        color: #0065FC;
     }
 }
