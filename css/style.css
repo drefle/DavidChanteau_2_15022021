@@ -277,6 +277,18 @@ input{
     padding:0.3rem;
 }
 
+.accommodation__city .list__cards .card:nth-child(1) .card__descriptif .descriptif__prix::after{
+    content: "25€";
+    font-family: Raleway-Regular;
+    font-weight: 900;
+}
+
+.accommodation__city .list__cards .card:nth-child(5) .card__descriptif .descriptif__prix::after{
+    content: "23€";
+    font-family: Raleway-Regular;
+    font-weight: 900;
+}
+
 .accommodation__city .list__cards .card, #activites .list__cards .card{
     flex-direction: column;
 }
@@ -313,6 +325,7 @@ input{
     height: 8.5rem;
     padding:0.3rem;
 }
+
 
 .accommodation__common .list__cards .card picture{
     width:35%;
