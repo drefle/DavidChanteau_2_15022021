@@ -341,6 +341,12 @@ input{
 .descriptif__prix{
     font-size: 0.8rem;
 }
+
+.descriptif__prix::after{
+    content:"€";
+    font-family: Raleway-Regular;
+    font-weight: 900;
+}
 .descriptif__star{
     font-size: 0.7rem;
 }
