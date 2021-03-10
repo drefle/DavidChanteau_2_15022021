@@ -164,7 +164,7 @@ input{
 .search__filter{
     margin-top: 2rem;
     display:flex;
-    align-items: center;
+    align-items: baseline;
 }
 
 .filters{
